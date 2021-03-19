@@ -2,11 +2,42 @@
   color: #AA90DF;
   padding: 8px 24px;
   border-radius: 4px;
-  background: #FFE6E9;
+  background: white;
   transition: background 0.3s ease;
+  font-size: 20px;
 }
 
 .btn-flat:hover {
   background: #cca3a8;
   color: white;
+}
+
+.btn-flat-pink {
+  font-size: 20px;
+  color: #AA90DF;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #FFE6E9;
+  transition: background 0.3s ease;
+}
+
+.btn-flat-pink:hover {
+  background: white;
+  color: #AA90DF;
+}
+
+.btn-flat-pink-big {
+  margin-top: 20px;
+  color: #AA90DF;
+  width: 300px;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #FFE6E9;
+  transition: background 0.3s ease;
+  font-size:  20px;
+}
+
+.btn-flat-pink-big:hover {
+  background: white;
+  color: #AA90DF;
 }

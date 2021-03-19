@@ -1,1 +1,25 @@
-<%= @cocktail.name %>
+<div class="card-header" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1559280247-8fa41750ca29?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80)">
+  <div class="cocktail-name-big">
+    <%= @cocktail.name %>
+  </div>
+</div>
+<div class="cocktail-all">
+  <div class="cocktail-description">
+    <h3>Description</h3>
+    <h2><%= @cocktail.description %></h2>
+  </div>
+  <div>
+    <h3>Ingredients</h3>
+    <%if @doses != nil %>
+      <% @doses.each do | dose| %>
+        <p><%= dose.description%> of
+        <%= dose.ingredient.name %>
+        <%= link_to "Delete", dose_path(dose.id), method: :delete, data: { confirm: "Delete dose?" }, class: "btn btn-flat-pink" %>
+        </p>
+      <% end %>
+      <%= link_to "New dose", new_cocktail_dose_path(@cocktail), class: "btn btn-flat-pink-big"%>
+    <% end %>
+  <br>
+  </div>
+</div>
+

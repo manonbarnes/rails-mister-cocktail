@@ -12,8 +12,8 @@
   </head>
 
   <body>
-    <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "#", class: "navbar-brand" do %>
+    <div class="sticky-top navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <%= link_to cocktails_path, class: "navbar-brand" do %>
     <div id='logo'> Cocktail Hub  </div>
   <% end %>
 
@@ -24,7 +24,7 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-   <%= link_to "Add a new cocktail", new_cocktail_path, class: "btn btn-flat" %>
+   <%= link_to "New cocktail", new_cocktail_path, class: "btn btn-flat" %>
         </div>
 
     </ul>
